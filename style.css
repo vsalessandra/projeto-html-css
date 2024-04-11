@@ -1,75 +1,85 @@
-nav {
-  background-color: #4d4848;
-  color: #d7bdbd;
-  padding: 10px;
-  text-align: center;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-nav ul {
-  list-style-type: none;
+body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  
 }
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+header{
+  margin-top: 0;
 }
 
-body {
-  font-family: Georgia, "Times New Roman", Times, serif, sans-serif;
-  margin: 0;
-  padding: 0;
+nav {
+  background-color: #fff;
+  text-align: right;
+
 }
-header,
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+nav ul li a{
+  text-decoration: none;
+  color: #660c2a;
+
+}
 footer{
-  background-color: #322d2d;
-  color: #0a0a0a;
-  padding: 10px;
-  padding: 0.5px;
+  background-color: #660c2a;
+  color: #fff;
+  padding: 2px;
   margin-left: 2px;
   margin-right: 2px;
+  border-radius: 5px;
 }
+footer p{
+  color: #fff;
+}
+
 aside {
+  background-color: #fff;
+  padding-left: 30px;
+  margin-left: 2.5px;
+  margin-right: 0px;
+  text-decoration: none;
   display: inline-block;
   vertical-align: top;
   width: 20%;
   margin: 0;
   margin-left: 20px;
-  
+  border-radius: 5px;
   
 }
 p{
   color: black;
 }
 main {
-  background-color: #c1bdc2;
+  background-color: white;
   display: inline-block;
   width: 75%;
   margin-left: 5px;
-  margin: 2px;
-}
-aside {
-  background-color: #c1bdc2;
-  padding-left: 30px;
-  margin-left: 2.5px;
-  margin-right: 0px;
+  margin-right: 3px;
+  border-radius: 5px;;
+  margin-right: 5px;
 }
 
 section {
-  background-color: #0f0f0f;
+  background-color: #8f0823a9;
+  padding: 2px;;
+  border-radius: 5px;;
   color: antiquewhite;
   padding: 10px;
+  margin: 10px;
+  
   p{
     color: white;
   }
 }
 .sec-two{
-  background-color: rgb(19, 19, 87);
+  background-color: #8f0823a9;
 }
 
 ul li{
@@ -79,12 +89,16 @@ ul li{
 }
 
 
-.menu-item-aside{
+.menu-item-aside a{
+  color: #660c2a;
   padding: 6px;
+  text-decoration: none;
 }
 
-.menu-as{
+.menu-as a{
   padding: 6px;
+  color: #660c2a;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
