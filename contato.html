@@ -5,9 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    body{
+        background: linear-gradient(#cf809e, #f3c1d8);
+    }
+    form{
+        width: 390px;
+        margin: 0 auto;
+        border: 1px solid #f5efef;
+        padding: 20px;
+        border-radius: 6px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        background: transparent;
+        
+    }
+    h1{
+        margin-left: 130px;
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-family: "Poppins", sans-serif;
+    }
+    label{
+        display: inline-block;
+        width: 90px;
+        margin-bottom: 15px;
+        margin-left: 30px;
+        font-family: "Poppins", sans-serif;
+        margin-right: 10px;
+        width: 200px;
+    }
+    label:hover{
+        transition: 0.3s all;
+        color: #3f3737;
+    }
+     form div{
+        margin-top: 15px;
+    }
+    input{
+        width: 330px;
+        height: 20px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        border-color: #3f3737;
+        background-color: transparent;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        margin-left: 25px;
+    }
+    input:focus{
+        outline: none;
+    }
+    .button{
+        margin-left: 145px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+        
+    
+    }
+    button{
+        margin-top: 25px;
+        margin-bottom: 15px;
+        border: darkgray;
+        background-color: transparent;
+        font-size: 19px;
+        font-family: Georgia, "Poppins", sans-serif;
+        border-radius: 7px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    button:hover{
+        color: #b595df;
+        transition: 0.3s all;
+    }
+</style>
 <body>
-    <form action="form">
-        <input type="text">
-    </form>
+<form action="formulario">
+    <h1>
+        FORMULARIO
+    </h1>
+    <div>
+        <label for="nome">NOME COMPLETO:</label>
+        <input type="text" id="nome">
+    </div>
+    <div>
+        <label for="data">DATA DE NASCIMENTO:</label>
+        <input type="data" id="data">
+    </div>
+    <div>
+        <label for="telefone">TELEFONE:</label>
+        <input type="tel" id="telefone">
+    </div>
+    <div>
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email">
+    </div>
+    <div class="button">
+        <button type="submit">ENVIAR</button>
+    </div>
+</form>
 </body>
 </html>
