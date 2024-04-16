@@ -6,6 +6,56 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  </head>
+ <style>
+.sr-only {
+    position: absolute;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+    color: transparent;
+}
+
+.input-slide {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.label-slide {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: solid 2px #ffffff;
+    border-radius: 999px;
+    background-color: transparent;
+    margin: 70px 5px 5px 5px;
+    cursor: pointer;
+    transition-duration: .4s;
+    box-shadow: 0 0 20px 0 #000;
+    left: 30%;
+    position: relative;
+}
+img{
+  height: 300px;
+  width: 250px;
+  margin-right: px;
+}
+.slide {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition-duration: .6s;
+    opacity: 1;
+}
+
+ </style>
  <body>
   <header>
     <div id="tit">
@@ -23,7 +73,6 @@
     <input type="text" id="tbusca">
     <button id="bbusca">BUSCAR</button>
   </div>
-  </nav>
 </header>
   <main>
       <h1>Principal:</h1>
@@ -31,9 +80,24 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium inventore odio ex, totam ad voluptatem in quidem dolor iure commodi non minima molestiae, reprehenderit adipisci veniam corrupti porro beatae!
       </p>
       <section>
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non reiciendis, corrupti veniam adipisci saepe, dicta ut velit cumque ad dolorem, qui reprehenderit. At ducimus, sint eveniet itaque minima ex aperiam.
-        </p>
+        <slider>
+          <div class="slide-css">
+            <input class="input-slide" type="radio" id="trigger1" name="slider" checked autofocus>
+            <label class="label-slide" for="trigger1"></label>
+            <img src="rosa1.jpg" alt="imagem1">
+            <div class="slide background-1"></div>
+        
+            <input class="input-slide" type="radio" id="trigger2" name="slider">
+            <label class="label-slide" for="trigger2"></label>
+            <img src="rosa2.jpg" alt="imagem2">
+            <div class="slide background-2"></div>
+
+            <input class="input-slide" type="radio" id="trigger3" name="slider">
+            <label class="label-slide" for="trigger3"></label>
+            <img src="rosa3.jpg" alt="imagem3">
+            <div class="slide background-3"></div>
+          </div>
+        </slider>
       </section>
       <hr>
       <section class="sec-two">

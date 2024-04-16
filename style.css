@@ -13,18 +13,16 @@ header{
 
 }
 #tit{
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 25px;
   margin-right: 5px;
   margin-bottom: 40px;
-  font-style: italic;
 }
 
 nav {
-  background-color: #fff;
+  background-color: #eedade;
   text-align: right;
-  margin-bottom: 25px;
- 
+  margin-bottom: 16px;
 }
 nav ul{
   display: inline-block;
@@ -58,11 +56,12 @@ li a:hover{
   width: 300px;
   height: 32px;
   margin-left: 1000px;
-  margin-top: -75px;
+  margin-top: -68px;
 
 }
 div i{
   margin-top: 8px;
+  margin-right: 6px;
 }
 #tbusca{
   float: left;
@@ -129,6 +128,7 @@ section {
   color: antiquewhite;
   padding: 10px;
   margin: 10px;
+  height: 300px;
   
   p{
     color: white;
@@ -136,10 +136,11 @@ section {
 }
 .sec-two{
   background-color: #660c2a;
+  height: 160px;
 }
 
 ul li{
-  padding-top: 15 px;
+  padding-top: 10px;
   margin: 10px;
   height: 20px;
 }
@@ -148,8 +149,8 @@ ul li{
 aside a{
   color: #660c2a;
   text-decoration: none;
-  margin-bottom: 15px;
-  font-size: 19px;
+  margin-bottom: 12px;
+  font-size: 18px;
 }
 aside h2{
   font-family: "Poppins" sans-serif;
@@ -160,7 +161,7 @@ aside h2{
 }
 
 .as{
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 600px) {
