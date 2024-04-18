@@ -7,54 +7,60 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  </head>
  <style>
-.sr-only {
-    position: absolute;
-    pointer-events: none;
-    width: 1px;
-    height: 1px;
-    color: transparent;
+.slider{
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
 }
-
-.input-slide {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.label-slide {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: solid 2px #ffffff;
-    border-radius: 999px;
-    background-color: transparent;
-    margin: 70px 5px 5px 5px;
-    cursor: pointer;
-    transition-duration: .4s;
-    box-shadow: 0 0 20px 0 #000;
-    left: 30%;
+.navigation-bar{
+    display: flex;
     position: relative;
+    bottom: 35px;
+    left: 90%;
+    transform: translate(-50%);
 }
-img{
-  height: 300px;
-  width: 250px;
-  margin-right: px;
+input{
+    display: none;
 }
-.slide {
-    position: absolute;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 15px;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #d34084;
+    transition: 0.4s;
+}
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+.slide{
+    width: 33.33%;
+    transition: 0.5s;
+}
+.slide img{
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform: translateX(-100%);
-    transition-duration: .6s;
-    opacity: 1;
 }
-
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -33.333%;
+}
+#radio3:checked ~ .first{
+    margin-left: -66.66%;
+}
  </style>
  <body>
   <header>
@@ -80,26 +86,29 @@ img{
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium inventore odio ex, totam ad voluptatem in quidem dolor iure commodi non minima molestiae, reprehenderit adipisci veniam corrupti porro beatae!
       </p>
       <section>
-        <slider>
-          <div class="slide-css">
-            <input class="input-slide" type="radio" id="trigger1" name="slider" checked autofocus>
-            <label class="label-slide" for="trigger1"></label>
-            <img src="rosa1.jpg" alt="imagem1">
-            <div class="slide background-1"></div>
-        
-            <input class="input-slide" type="radio" id="trigger2" name="slider">
-            <label class="label-slide" for="trigger2"></label>
-            <img src="rosa2.jpg" alt="imagem2">
-            <div class="slide background-2"></div>
-
-            <input class="input-slide" type="radio" id="trigger3" name="slider">
-            <label class="label-slide" for="trigger3"></label>
-            <img src="rosa3.jpg" alt="imagem3">
-            <div class="slide background-3"></div>
+        <div class="slider">
+          <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <div class="slide first">
+                  <img src="img1.jpg"
+                      alt="flores">
+              </div>
+              <div class="slide">
+                  <img src="img2.jpg" alt="flores">
+              </div>
+              <div class="slide">
+                  <img src="img3.jpg" alt="flores">
+              </div>
+              </div>
           </div>
-        </slider>
-      </section>
-      <hr>
+          <div class="navigation-bar">
+              <label class="manual-btn" for="radio1"></label>
+              <label class="manual-btn" for="radio2"></label>
+              <label class="manual-btn" for="radio3"></label>
+          </div>
+      </div>
       <section class="sec-two">
         <h2>Section 2</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis magnam a eligendi beatae error. Vitae quas totam, tenetur accusamus placeat, id impedit in, dolor unde dolores magnam quam perferendis. Fuga.

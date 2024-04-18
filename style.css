@@ -88,6 +88,7 @@ footer{
   margin-left: 2px;
   margin-right: 2px;
   border-radius: 10px;
+  margin-top: 90px;
 }
 footer p{
   color: #fff;
@@ -95,13 +96,16 @@ footer p{
 
 aside {
   background-color: #fff;
-  margin-right: 0px;
+  margin-right: 45px;
   text-decoration: none;
   vertical-align: top;
   width: 20%;
   border-radius: 10px;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 0px;
+  margin-top: 100px;
+  padding: 0;
+  border: #df6c92d3;
 }
 p{
   color: black;
@@ -120,15 +124,16 @@ main h1{
   color: #a3254fd2;
 
 }
-
 section {
   background-color: #660c2a;
   padding: 2px;;
   border-radius: 10px;
   color: antiquewhite;
-  padding: 10px;
-  margin: 10px;
-  height: 300px;
+  padding: 0px;
+  height: 500px;
+  width: 800;
+  margin-left: 7px;
+  margin-left: 10px;
   
   p{
     color: white;
@@ -136,7 +141,10 @@ section {
 }
 .sec-two{
   background-color: #660c2a;
-  height: 160px;
+  height: 150px;
+  width: 975px;
+  margin-left: 0px;
+  padding: 5px;
 }
 
 ul li{
@@ -149,19 +157,19 @@ ul li{
 aside a{
   color: #660c2a;
   text-decoration: none;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 aside h2{
   font-family: "Poppins" sans-serif;
   color: #a3254fd2;
   font-size: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-top: 90px;
 }
 
 .as{
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 600px) {
