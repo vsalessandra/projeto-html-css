@@ -6,11 +6,9 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins" sans-serif;
-  
 }
 header{
   color: #660c2aa6;
-
 }
 #tit{
   margin-top: 40px;
@@ -93,7 +91,6 @@ footer{
 footer p{
   color: #fff;
 }
-
 aside {
   background-color: #fff;
   margin-right: 45px;
@@ -172,7 +169,7 @@ aside h2{
   margin-bottom: 0px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   main,
   aside {
     display: block;
